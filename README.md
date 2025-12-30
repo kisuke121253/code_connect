@@ -128,39 +128,7 @@ prisma/
 
 <div align="center">
 
-<a href="https://www.google.com/search?q=https://github.com/kisuke121253">
-<img src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/108624479%3Fv%3D4" width="100px;" alt="Foto do João Pedro no GitHub"/>
-
-
-
-
 <sub><b>João Pedro Lacerda</b></sub>
-</a>
-
-
-
-
-
-<p>Desenvolvedor Full Stack Jr.</p>
 
 </div>
 
----
-
-Feito com 💜 por João Pedro.
-
-```
-
-### Dicas para deixar ainda mais top:
-
-1.  **Print do Projeto:** Eu coloquei uma imagem genérica no topo (`![Cover]`). O ideal é você abrir seu site rodando, tirar um print bem bonito da tela inicial, salvar na pasta `public` do projeto, subir pro GitHub e trocar aquele link pelo link da sua imagem.
-2.  **Deploy:** Como você já subiu na Vercel, você pode adicionar uma seção "Deploy" logo abaixo do "Sobre o Projeto" com o link para o site ao vivo. Isso brilha os olhos dos recrutadores.
-
-Exemplo de botão de deploy para adicionar:
-
-```markdown
-[![Deploy na Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-connect-rho-topaz.vercel.app/)
-
-```
-
-*(Lembre-se de trocar o link do final pelo link real do seu projeto na Vercel)*.
