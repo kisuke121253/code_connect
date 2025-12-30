@@ -54,3 +54,113 @@ Certifique-se de ter instalado:
 ```bash
 git clone [https://github.com/kisuke121253/code_connect.git](https://github.com/kisuke121253/code_connect.git)
 cd code-connect
+
+```
+
+### 2. Instale as dependências
+
+```bash
+npm install
+
+```
+
+### 3. Configuração do Banco de Dados
+
+Crie um arquivo `.env` na raiz do projeto com base nas configurações do seu banco. Exemplo:
+
+```env
+DATABASE_URL="postgresql://postgres:1234@localhost:5432/codeconnect_dev?schema=public"
+
+```
+
+> **Dica:** Se você tiver o Docker instalado, pode subir o banco de dados rapidamente com o comando:
+> ```bash
+> docker-compose up -d
+> 
+> ```
+> 
+> 
+
+### 4. Migrations e Seed
+
+Com o banco rodando, execute as migrações para criar as tabelas e o seed para popular com dados de teste:
+
+```bash
+# Cria as tabelas no banco
+npx prisma migrate dev
+
+# Popula o banco com posts de exemplo
+npx prisma db seed
+
+```
+
+### 5. Execute o projeto
+
+```bash
+npm run dev
+
+```
+
+O projeto estará rodando em `http://localhost:3000`.
+
+---
+
+## 📂 Estrutura do Projeto
+
+A estrutura principal das pastas é organizada da seguinte forma:
+
+```
+src/
+├── app/
+│   ├── components/    # Componentes reutilizáveis (Avatar, CardPost, etc.)
+│   ├── posts/[slug]/  # Rota dinâmica para exibição do post
+│   ├── layout.js      # Layout global
+│   └── page.js        # Home page
+├── logger.js          # Configuração de logs
+prisma/
+├── schema.prisma      # Definição do banco de dados
+├── seed.js            # Dados iniciais
+└── migrations/        # Histórico de mudanças no banco
+
+```
+
+## ✒️ Autor
+
+<div align="center">
+
+<a href="https://www.google.com/search?q=https://github.com/kisuke121253">
+<img src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/108624479%3Fv%3D4" width="100px;" alt="Foto do João Pedro no GitHub"/>
+
+
+
+
+<sub><b>João Pedro Lacerda</b></sub>
+</a>
+
+
+
+
+
+<p>Desenvolvedor Full Stack Jr.</p>
+
+</div>
+
+---
+
+Feito com 💜 por João Pedro.
+
+```
+
+### Dicas para deixar ainda mais top:
+
+1.  **Print do Projeto:** Eu coloquei uma imagem genérica no topo (`![Cover]`). O ideal é você abrir seu site rodando, tirar um print bem bonito da tela inicial, salvar na pasta `public` do projeto, subir pro GitHub e trocar aquele link pelo link da sua imagem.
+2.  **Deploy:** Como você já subiu na Vercel, você pode adicionar uma seção "Deploy" logo abaixo do "Sobre o Projeto" com o link para o site ao vivo. Isso brilha os olhos dos recrutadores.
+
+Exemplo de botão de deploy para adicionar:
+
+```markdown
+[![Deploy na Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-connect-rho-topaz.vercel.app/)
+
+```
+
+*(Lembre-se de trocar o link do final pelo link real do seu projeto na Vercel)*.
