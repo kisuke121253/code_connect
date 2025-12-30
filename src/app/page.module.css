@@ -1,0 +1,66 @@
+.main {
+  display: flex;
+  flex-direction: row; /* Volta ao padrão de linha */
+  flex-wrap: wrap;     /* Permite quebrar linha quando acaba o espaço */
+  justify-content: center; /* Centraliza os cards */
+  gap: 32px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+/* --- Área da Paginação --- */
+.pagination {
+  width: 100%; /* Força a ocupar a linha inteira, empurrando para baixo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+  border-top: 1px solid var(--glass-border); /* Opcional: linha separadora */
+  padding-top: 32px;
+}
+
+/* --- Botões Bonitos (Estilo Pílula Neon) --- */
+.paginationLink {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+  /* Estilo base */
+  background: rgba(15, 23, 42, 0.6); 
+  border: 1px solid var(--glass-border);
+  color: #94a3b8; 
+  
+  padding: 12px 32px;
+  border-radius: 50px; /* Redondinho */
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.paginationLink span {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  line-height: 0;
+  padding-bottom: 3px; /* Pequeno ajuste de alinhamento da seta */
+}
+
+/* --- Efeitos de Hover --- */
+.paginationLink:hover {
+  border-color: var(--accent); /* Ciano */
+  color: #fff;
+  background: rgba(56, 189, 248, 0.15);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3); /* Brilho */
+  transform: translateY(-2px);
+}
+
+.paginationLink:first-child:hover span {
+    transform: translateX(-4px);
+}
+
+.paginationLink:last-child:hover span {
+    transform: translateX(4px);
+}

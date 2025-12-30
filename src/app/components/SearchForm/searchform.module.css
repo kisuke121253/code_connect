@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px; /* Espaço entre a busca e os posts */
+}
+
+.input {
+  flex: 1; /* Ocupa todo o espaço disponível */
+  background: rgba(0, 0, 0, 0.3); /* Fundo preto transparente */
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #e2e8f0; /* Texto claro */
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.input::placeholder {
+  color: #64748b; /* Cor do placeholder mais suave */
+}
+
+.input:focus {
+  border-color: var(--accent); /* Borda fica ciano ao digitar */
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}

@@ -1,0 +1,53 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link article {
+  background: var(--glass-bg); /* Fundo translúcido */
+  backdrop-filter: blur(12px); /* O desfoque atrás do card */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.link article:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.3); /* Glow azul */
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.link article:hover .img {
+  opacity: 1;
+}
+
+.section {
+  padding: 20px;
+}
+
+.cardpost_title {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.footer {
+  padding: 0 20px 20px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 15px;
+}

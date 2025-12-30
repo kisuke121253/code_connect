@@ -1,0 +1,22 @@
+.ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 12px; /* Espaço entre imagem e nome */
+}
+
+.ul li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #94a3b8; /* Cinza azulado claro */
+  font-weight: 500;
+}
+
+/* Estilizando a imagem especificamente */
+.ul li img {
+  border-radius: 50%; /* Torna a imagem redonda */
+  border: 2px solid var(--accent); /* Borda Ciano ao redor do avatar */
+}

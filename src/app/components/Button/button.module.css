@@ -1,0 +1,23 @@
+.btn {
+  background: var(--accent); /* Ciano Neon (#38bdf8) */
+  color: #0f172a; /* Texto escuro para contraste com o fundo neon */
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background: #7dd3fc; /* Um tom mais claro no hover */
+  box-shadow: 0 0 15px var(--accent); /* Efeito de brilho externo (Glow) */
+  transform: translateY(-2px); /* Sobe levemente */
+}
+
+.btn:active {
+  transform: translateY(0);
+}
